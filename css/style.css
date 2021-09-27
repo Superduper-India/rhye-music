@@ -1,0 +1,22 @@
+@import "reset.css";
+@import "variables.css";
+
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+body {
+    background-color: brown;
+    /* 그 외 모든 것 용 */
+    font-family: 'Dosis', sans-serif;
+    /* 타이틀 및 스크린헤더 용 */
+    font-family: 'Hind Siliguri', sans-serif;
+    /* last dance 용 */
+    font-family: 'Spartan', sans-serif;
+}
+
+.diagonal-gradient {
+    background: linear-gradient(to bottom right, #cfcfcf, #898989);
+  }
