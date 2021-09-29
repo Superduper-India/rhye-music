@@ -188,6 +188,7 @@ body {
 }
 .column__play-btn i {
     font-size: 10px;
+    color: white;
 }
 .column__song-name {
     font-size: 14px;
