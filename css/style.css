@@ -1,10 +1,8 @@
 @import "reset.css";
 @import "variables.css";
 
-
-img {
-    width: 100px;
-    height: 100px;
+* {
+box-sizing: border-box;
 }
 
 body {
@@ -15,8 +13,211 @@ body {
     font-family: 'Hind Siliguri', sans-serif;
     /* last dance 용 */
     font-family: 'Spartan', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
 }
 
 .diagonal-gradient {
     background: linear-gradient(to bottom right, #cfcfcf, #898989);
   }
+
+.left-box {
+    width: 375px;
+    height: 780px;
+    border-radius: 32px;
+
+    background-color: black;
+    background-image: url("http://image.yes24.com/goods/58409295/XL");
+    background-repeat: no-repeat;
+    background-size: auto 450px;
+    background-position-y: -70px;
+    background-position-x: center;
+
+    position: relative;
+    margin: 50px;
+}
+.right-box {
+    width: 375px;
+    height: 780px;
+    border-radius: 32px;
+    margin: 50px;
+    background-color: white;
+}
+.right-box img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.top-box {
+    padding: 48px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+.top-box__back-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.25);
+}
+.top-box__more-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.25);
+}
+
+
+.title {
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: black;
+    line-height: 200%;
+}
+.title h6 {
+    font-size: 14px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 300;
+}
+.title h1 {
+    font-size: 32px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 600;
+}
+
+
+.play-btn {
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fcfe6c;
+    position: absolute;
+    top: 220px;
+    right: 24px;
+}
+.play-btn i {
+    font-size: 26px;
+}
+
+
+.main-box {
+    border-radius: 32px;
+    border-top-left-radius: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dosis', sans-serif;
+}
+
+.main-box .info {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 38px 0;
+}
+.info__songs,
+.info__followers,
+.info__following {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+    line-height: 180%;
+}
+.info__first-letter {
+    font-size: 16px;
+    color: rgba(255,255,255,0.3);
+}
+.info__second-letter {
+    font-size: 20px;
+    color: rgba(255,255,255,0.35);
+}
+
+.popular-songs-title,
+.albums-title {
+    padding: 0 24px;
+    color:rgba(255,255,255,0.5);
+    font-size: 18px;
+}
+.popular-songs {
+    margin-bottom: 18px;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* 스크롤바 만들기 */
+    overflow: hidden;
+}
+.column {
+    margin-right: 20px;    
+    position: relative;
+}
+.popular-songs img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+.column__play-btn {
+    background-color: #777777;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 22px;
+    left: 80px;
+}
+.column__play-btn i {
+    font-size: 10px;
+}
+.column__song-name {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+}
+
+.albums {
+    padding: 0 24px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.albums img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.albums__middle-box {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    line-height: 180%;
+}
+.albums__middle-box__name {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+}
+.albums__middle-box__years {
+    color: rgba(255,255,255,0.35);
+}
+.albums i {
+    color: #fcfe6c;
+}

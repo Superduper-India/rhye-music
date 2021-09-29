@@ -13,58 +13,52 @@
     </style>
 </head>
 
-<body>
+<body class="diagonal-gradient">
     <div class="left-box">
 
-        <head>
-            <img src="http://image.yes24.com/goods/58409295/XL" />
-
-            <div class="back-icon">
+        <div class="top-box">
+            <div class="top-box__back-icon">
                 <i class="fas fa-chevron-left"></i>
             </div>
 
-            <div class="more-icon">
+            <div class="top-box__more-icon">
                 <i class="fas fa-ellipsis-h"></i>
             </div>
-        </head>
+        </div>
+
+        <div class="title">
+            <h6>ARTIST</h6>
+            <h1>Rhye</h1>
+        </div>
 
 
         <main>
-            <div class="title">
-                <h6>ARTIST</h6>
-                <h1>Rhye</h1>
-            </div>
-
-
             <div class="play-btn">
                 <i class="fas fa-play"></i>
             </div>
 
-
             <div class="main-box">
                 <div class="info">
                     <div class="info__songs">
-                        <span class="info__songs-first-letter">Songs</span>
-                        <span class="info__songs-second-letter">112</span>
+                        <span class="info__first-letter">Songs</span>
+                        <span class="info__second-letter">112</span>
                     </div>
 
                     <div class="info__followers">
-                        <span class="info__songs-first-letter">Followers</span>
-                        <span class="info__songs-second-letter">60M</span>
+                        <span class="info__first-letter">Followers</span>
+                        <span class="info__second-letter">60M</span>
                     </div>
 
                     <div class="info__following">
-                        <span class="info__songs-first-letter">Following</span>
-                        <span class="info__songs-second-letter">1563</span>
+                        <span class="info__first-letter">Following</span>
+                        <span class="info__second-letter">1563</span>
                     </div>
                 </div>
 
-
+                <h5 class="popular-songs-title">Popular</h5>
                 <div class="popular-songs">
-                    <h5>Popular</h5>
-
                     <div class="column">
-                        <img src="#" />
+                        <img src="https://image.bugsm.co.kr/album/images/500/6668/666864.jpg" />
                         <div class="column__play-btn">
                             <i class="fas fa-play"></i>
                         </div>
@@ -74,7 +68,8 @@
                     </div>
 
                     <div class="column">
-                        <img src="#" />
+                        <img
+                            src="http://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/081/021/250/81021250_1515658046544_1_600x600.JPG" />
                         <div class="column__play-btn">
                             <i class="fas fa-play"></i>
                         </div>
@@ -84,7 +79,7 @@
                     </div>
 
                     <div class="column">
-                        <img src="#" />
+                        <img src="https://image.bugsm.co.kr/album/images/500/3439/343979.jpg" />
                         <div class="column__play-btn">
                             <i class="fas fa-play"></i>
                         </div>
@@ -94,20 +89,16 @@
                     </div>
                 </div>
 
-
+                <h5 class="albums-title">Albums</h5>
                 <div class="albums">
-                    <h5>Albums</h5>
+                    <img src="https://bimage.interpark.com/goods_image/8/1/9/9/314898199g.jpg" />
 
-                    <div class="albums__box">
-                        <img src="#" />
-
-                        <div class="albums__middle-box">
-                            <span class="albums__middle-box__name">Sprit Remixed</span>
-                            <span class="albums__middle-box__years">2019</span>
-                        </div>
-
-                        <i class="fas fa-ellipsis-h"></i>
+                    <div class="albums__middle-box">
+                        <span class="albums__middle-box__name">Sprit Remixed</span>
+                        <span class="albums__middle-box__years">2019</span>
                     </div>
+
+                    <i class="fas fa-ellipsis-h"></i>
                 </div>
             </div>
         </main>
@@ -115,7 +106,52 @@
     </div>
 
     <div class="right-box">
+        <div class="background-box"></div>
+        <!-- head 가 박스 역할을 하나? 안하면 디브로 대체-->
 
+        <head>
+            <i class="fas fa-chevron-down"></i>
+            <h6>PLAYING NOW</h6>
+            <i class="fas fa-bars"></i>
+        </head>
+        <img
+            src="https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/080/344/806/80344806_1362358299982_1_600x600.JPG/dims/resize/Q_80,0" />
+        <main>
+            <div class="song-info">
+                <div class="song-info__column1">
+                    <h2>Last Dance</h2>
+                    <span class="song-info__musician">
+                        Rhye
+                    </span>
+                </div>
+                <!-- 콜룬2 꼭 있어야 하나??-->
+                <div class="song-info__column2">
+                    <!-- put icon heart-->
+                </div>
+            </div>
+
+            <div class="song-status">
+                <div class="song-status__bar">
+                    <div class="bar__full"></div>
+                    <div class="bar__passed"></div>
+                    <div class="bar__point"></div>
+                </div>
+                <div class="song-status__time">
+                    <span class="time__passed">1:04</span>
+                    <span class="time__full">3:27</span>
+                </div>
+            </div>
+
+            <div class="song-control">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-backward"></i>
+                <div class="song-control__play">
+                    <i class="fas fa-pause"></i>
+                </div>
+                <i class="fas fa-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+        </main>
     </div>
     <!--폰트어썸 아이콘사용 링크-->
     <script src="https://kit.fontawesome.com/8755b009ca.js" crossorigin="anonymous"></script>
